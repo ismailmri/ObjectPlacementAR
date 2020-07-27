@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>8th Wall Web: Manipulate</title>
+    <title>Manipulate</title>
 
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
@@ -15,11 +15,12 @@
 
   <body>
     <a-scene
-      embedded arjs>
+      embedded arjs
+      gesture-detector
+      >
 
       <!-- We can define assets here to be loaded when A-Frame initializes -->
       <a-assets>
-        <!-- Credit to Poly by Google for the model: https://poly.google.com/view/5ZMAz7_ucTn -->
         <a-asset-item id="sandCastleModel" src="sand-castle.glb"></a-asset-item>
       </a-assets>
 
