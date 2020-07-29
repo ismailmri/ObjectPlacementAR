@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Manipulate</title>
+    <title>AR View</title>
 
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
@@ -21,7 +21,8 @@
 
       <!-- We can define assets here to be loaded when A-Frame initializes -->
       <a-assets>
-        <a-asset-item id="sandCastleModel" src="sand-castle.glb"></a-asset-item>
+        <!-- <a-asset-item id="sandCastleModel" src="sand-castle.glb"></a-asset-item> -->
+        <a-asset-item id="mclarenModel" src="mc-laren/source/McLaren.glb"></a-asset-item>
       </a-assets>
 
       <!-- The raycaster will emit mouse events on scene objects specified with the cantap class -->
@@ -42,7 +43,7 @@
 
       <a-light type="ambient" intensity="1"></a-light>
 
-      <a-entity gltf-model="#sandCastleModel" class="cantap" hold-drag two-finger-spin pinch-scale scale="0.025 0.025 0.025"></a-entity>
+      <a-entity gltf-model="#mclarenModel" class="cantap" hold-drag two-finger-spin pinch-scale scale="0.025 0.025 0.025"></a-entity>
 
       <a-entity
         id="ground"
